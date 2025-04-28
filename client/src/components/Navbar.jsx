@@ -39,6 +39,7 @@ const Navbar = () => {
             {/* Desktop Menu */}
            
             <div className="hidden sm:flex items-center gap-8">
+                <button onClick={()=> Navigate('/seller')} class="border border-gray-300 px-3 py-1 rounded-full text-xs cursor-pointer opacity-80" fdprocessedid="vz4q3l">Seller Dashboard</button>
                 <NavLink to='/'>Home</NavLink>
                 <NavLink to='/products'>All Products</NavLink>
                 <NavLink to='/contacts'>Contacts</NavLink>
