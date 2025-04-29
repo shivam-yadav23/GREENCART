@@ -80,9 +80,9 @@ const Cart = () => {
             }
         }catch(error){
             toast.error(error.message)
-        }
-
-        useEffect(()=>{
+        } 
+    }
+    useEffect(()=>{
             if(products.length > 0 && cartItems){
                 getCart()
             }
@@ -93,7 +93,6 @@ const Cart = () => {
                 getUserAddress();
             }
         }, [user])
-    }
 
     return (products.length > 0 && cartItems) ? (
         <div className="flex flex-col md:flex-row mt-16">
