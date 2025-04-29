@@ -19,14 +19,9 @@ const AddProduct = () => {
         try{
             e.preventDefault();
 
-             const descriptionArray = description
-            .split('\n')
-            .map(line => line.trim())
-            .filter(Boolean);
-
             const productData = {
                 name,
-                description: descriptionArray,
+                description,
                 category,
                 price,
                 offerPrice
